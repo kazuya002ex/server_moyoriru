@@ -73,3 +73,70 @@ a:hover {
   color: skyblue;
   transition: .3s;
 }
+
+/* header */
+
+header {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo h1 {
+  font-size: 1.8rem;
+  font-family: "Nico Moji";
+}
+
+.header-menu ul {
+  margin-top: 3%;
+  display: flex;
+}
+
+.header-menu ul li a {
+  font-size: 1.05rem;
+  padding-right: 43px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 1.5%;
+}
+
+footer a {
+  color: rgb(255, 252, 252);
+}
+
+.footer-menu {
+  background-color: #003366;
+  color: rgb(255, 252, 252);
+  padding-bottom: 3%;
+}
+
+.footer-menu ul {
+  margin-left: 17%;
+  display: flex;
+  padding-top: 2.6%;
+}
+
+.footer-menu ul li a {
+  margin-left: 32px;
+  font-size: 1.06rem;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 1.8%;
+}
+
+.footer-logo h2 {
+  font-family: "Nico Moji";
+  font-size: 1.5rem;
+  margin-bottom: .8%;
+}
+
+.footer-logo small {
+  font-size: .88rem;
+}
+
