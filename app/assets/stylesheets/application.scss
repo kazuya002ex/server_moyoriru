@@ -251,7 +251,7 @@ footer a {
 
 .top-index-venue .fa-subway {
   font-size: 1.5rem;
-  color: rgb(102, 224, 102);
+  color: rgb(239, 116, 116);
 }
 
 .top-index-venue .venue-descriptions {
@@ -267,12 +267,17 @@ footer a {
 }
 
 .top-index-venue p {
+  color: rgb(239, 116, 116);
+  font-size: .88rem;
+}
+
+.top-index-venue .on_foot {
   color: #777;
 }
 
 .top-index-venue .action-button {
   margin-top: .5%;
-  font-size: .9rem;
   color: #777;
   text-align: right;
+  font-size: .88rem;
 }
