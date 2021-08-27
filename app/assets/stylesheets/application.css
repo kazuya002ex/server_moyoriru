@@ -199,3 +199,16 @@ footer a {
   color: #888;
 }
 
+.top-index-search-form form input[type="submit"] {
+  color: #fefefe;
+  background-color: #111;
+  height: 38px;
+  width: 7%;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.top-index-search-form form input[type="submit"]:hover {
+  opacity: .8;
+  transition: .3s;
+}
