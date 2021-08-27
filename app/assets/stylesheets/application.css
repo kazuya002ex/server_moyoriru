@@ -223,3 +223,13 @@ footer a {
 .top-index-venues {
   margin: 6.5% auto;
 }
+
+.top-index-venues-title {
+  width: 63%;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.top-index-venues-title h2 {
+  margin-bottom: 1.5%;
+}
