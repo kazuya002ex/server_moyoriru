@@ -238,7 +238,8 @@ footer a {
 
 .top-index-venue {
   width: 60%;
-  margin: 4.5% 0;
+  padding: 2% 0;
+  margin-bottom: .5%;
 }
 
 .top-index-venue a {
@@ -256,11 +257,19 @@ footer a {
 }
 
 .top-index-venue h3 {
+  width: 320px;
   font-size: 1.12rem;
   font-weight: 600;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
 }
 
 .top-index-venue p {
   color: #777;
+}
+
+.top-index-venue .action-button {
+  margin-top: .5%;
+  font-size: .9rem;
+  color: #777;
+  text-align: right;
 }
