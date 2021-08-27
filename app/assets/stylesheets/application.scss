@@ -329,6 +329,11 @@ footer a {
   margin: 3% 0;
 }
 
+.venues-show-venue-map p {
+  margin-bottom: 1%;
+  color: #666;
+}
+
 .venues-show-venue-map iframe {
   border-radius: 8px;
 }
@@ -469,5 +474,63 @@ footer a {
   
   .top-index-venue .action-button {
     display: none;
+  }
+
+  // venues#show
+
+  .venues-show-wrapper {
+    margin-top: 12%;
+  }
+
+  .venues-show-details {
+    margin: 0 3%;
+    padding-bottom: 8%;
+  }
+
+  .venues-show-title {
+    margin-bottom: 7.5%;
+  }
+
+  .venues-show-title h2 {
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .venues-show-station-and-no_foot .venues-show-station-and-no_foot--name {
+    font-size: 1.3rem;
+    margin-top: 5.5%;
+    margin-bottom: 5%;
+    letter-spacing: 2.3px;
+  }
+
+  .venues-show-venue-map {
+    margin: 6% 0;
+  }
+
+  .venues-show-venue-map p {
+    margin-bottom: 3%;
+  }
+
+  .venues-show-venue-map iframe {
+    border-radius: 8px;
+  }
+
+  .venues-show-access-url {
+    width: 50%;
+    margin-top: 8%;
+  }
+
+  .venues-show-access-url h3 {
+    font-size: 1.03rem;
+  }
+
+  .venues-show-access-url p {
+    width: 300px;
+  }
+
+  .venues-show-access-url a {
+    word-break: break-all;
+    margin-top: 2%;
   }
 }
