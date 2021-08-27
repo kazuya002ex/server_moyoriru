@@ -397,4 +397,41 @@ footer a {
     font-size: .88rem;
     font-style: italic;
   }
+
+  /* common */
+
+  .wrapper {
+    margin: 0 5%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+    font-weight: 400;
+  }
+
+  /* top#index */
+
+  .top-index-text {
+    text-align: left;
+    margin-bottom: 12%;
+    margin-top: 12%;
+  }
+
+  .top-index-text h2 {
+    font-size: .95rem;
+  }
+
+  .top-index-search-form {
+    margin: 1.5% auto;
+  }
+
+  .top-index-search-form form input[type="search"] {
+    width: 80%;
+    height: 38px;
+  }
+
+  .top-index-search-form form input[type="submit"] {
+    width: 17%;
+  }
 }
