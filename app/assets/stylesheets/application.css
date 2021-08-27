@@ -77,12 +77,13 @@ a:hover {
 /* header */
 
 header {
-  margin-top: 1.5%;
+  margin: 1.5% 15% 3% 15%;
   display: flex;
   justify-content: space-between;
 }
 
 .header-logo h1 {
+  margin-top: 3%;
   font-size: 1.8rem;
   font-family: "Nico Moji";
 }
@@ -93,7 +94,7 @@ header {
 }
 
 .header-menu ul li a {
-  font-size: 1.05rem;
+  font-size: .92rem;
   padding-right: 43px;
 }
 
@@ -115,13 +116,13 @@ footer a {
 }
 
 .footer-menu ul {
-  margin-left: 17%;
+  margin-left: 15%;
   display: flex;
   padding-top: 2.6%;
 }
 
 .footer-menu ul li a {
-  margin-left: 32px;
+  margin-right: 32px;
   font-size: 1.06rem;
 }
 
@@ -138,5 +139,22 @@ footer a {
 
 .footer-logo small {
   font-size: .88rem;
+}
+
+/* common */
+
+.wrapper {
+  margin: 0 15%;
+}
+
+/* top#index */
+
+.top-index-search-form {
+  margin: 1.5% auto;
+}
+
+.top-index-search-form form input[type="search"] {
+  width: 50%;
+  height: 25px;
 }
 
