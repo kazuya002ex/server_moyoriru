@@ -345,3 +345,53 @@ footer a {
   margin-top: 4%;
   color: #56b0d4;
 }
+
+@media screen and (max-width: 480px) {
+  /* header */
+
+  header {
+    margin: 6% 5% 4% 5%;
+  }
+
+  .header-logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-menu ul {
+    display: none;
+  }
+
+  /* footer */
+
+  footer {
+    margin-bottom: 5%;
+  }
+
+  .footer-menu ul {
+    margin-left: 5%;
+    display: block;
+    padding-top: 3.5%;
+  }
+
+  .footer-menu ul li {
+    margin: 5% 0;
+  }
+
+  .footer-menu ul li a {
+    font-size: 1.12rem;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-top: 3.5%;
+  }
+
+  .footer-logo h2 {
+    margin-bottom: 5%;
+  }
+
+  .footer-logo small {
+    font-size: .88rem;
+    font-style: italic;
+  }
+}
