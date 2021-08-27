@@ -183,6 +183,12 @@ footer a {
   margin: 0 15%;
 }
 
+.title {
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+
 /* top#index */
 
 .top-index-search-form {
@@ -212,4 +218,8 @@ footer a {
 .top-index-search-form form input[type="submit"]:hover {
   opacity: .8;
   transition: .3s;
+}
+
+.top-index-venues {
+  margin: 6.5% auto;
 }
