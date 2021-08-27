@@ -154,7 +154,13 @@ footer a {
 }
 
 .top-index-search-form form input[type="search"] {
-  width: 50%;
-  height: 25px;
+  width: 55%;
+  height: 38px;
+  padding-left: 1.5%;
+  font-weight: 520;
+}
+
+.top-index-search-form form input::placeholder {
+  color: #888;
 }
 
