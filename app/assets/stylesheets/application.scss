@@ -115,7 +115,7 @@ input, select {
 /* header */
 
 header {
-  margin: 1.5% 15% 3% 15%;
+  margin: 1.5% 15% 5% 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -282,4 +282,17 @@ footer a {
   color: #777;
   text-align: right;
   font-size: .85rem;
+}
+
+// venues#show
+
+.venues-show-title {
+  color:rgb(239, 116, 116);
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+.venues-show-title h2 {
+  margin-bottom: 1%;
+  font-size: 1.5rem;
 }
