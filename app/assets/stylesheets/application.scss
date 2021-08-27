@@ -115,7 +115,7 @@ input, select {
 /* header */
 
 header {
-  margin: 1.5% 15% 5% 15%;
+  margin: 1.5% 15% 4% 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -140,8 +140,6 @@ header {
 
 footer {
   margin-top: 5%;
-  // margin-left: -25.8%;
-  // margin-right: -25.8%;
   margin-bottom: 1.5%;
 }
 
@@ -195,6 +193,17 @@ footer a {
 }
 
 /* top#index */
+
+.top-index-text {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.top-index-text h2 {
+  font-size: 1.125rem;
+  color: #444;
+  font-weight: 500;
+}
 
 .top-index-search-form {
   margin: 1.5% auto;
