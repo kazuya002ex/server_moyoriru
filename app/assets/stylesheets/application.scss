@@ -434,4 +434,40 @@ footer a {
   .top-index-search-form form input[type="submit"] {
     width: 17%;
   }
+
+  .top-index-venues {
+    margin: 14% auto;
+    padding-bottom: 1%;
+  }
+  
+  .top-index-venues-title {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  
+  .top-index-venue {
+    width: 80%;
+    padding: 6% 0;
+  }
+
+  .top-index-venue .fa-subway {
+    font-size: 1.75rem;
+  }
+  
+  .top-index-venue .venue-descriptions {
+    margin-left: 5.5%;
+    margin-top: .5%;
+  }
+  
+  .top-index-venue h3 {
+    font-size: 1.2rem;
+  }
+  
+  .top-index-venue p {
+    font-size: 1rem;
+  }
+  
+  .top-index-venue .action-button {
+    display: none;
+  }
 }
