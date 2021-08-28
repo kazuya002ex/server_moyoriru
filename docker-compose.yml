@@ -5,7 +5,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
     ports:
-      - '3306:3306'
+      - '3399:3306'
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - mysql-data:/var/lib/mysql
@@ -15,7 +15,7 @@ services:
     volumes:
       - .:/moyoriru
     ports:
-      - "3000:3000"
+      - "3002:3000"
     depends_on:
       - db
     stdin_open: true
