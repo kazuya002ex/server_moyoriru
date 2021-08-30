@@ -352,6 +352,44 @@ footer a {
   color: #56b0d4;
 }
 
+// admin/venues#index
+
+.admin-venues-index-contents {
+  margin: 0 3%;
+}
+
+.admin-venues-index-contents-title {
+  margin: 3% 0;
+  font-weight: 500;
+}
+
+.admin-venues-index-contents-title h3 {
+  font-size: 1.2rem;
+}
+
+.admin-venues-index-venue-contents {
+  height: 330px;
+  overflow: scroll;
+}
+
+.admin-venues-index-venue-contents .venue-content {
+  display: flex;
+  margin-bottom: 3.5%;
+  border-bottom: 4px solid #ddd;
+}
+
+.venue-content p {
+  margin-right: 2%;
+}
+
+.venue-content .link-p a {
+  color: #999;
+}
+
+.venue-content .link-p a:hover {
+  opacity: .7;
+}
+
 @media screen and (max-width: 480px) {
   /* header */
 
