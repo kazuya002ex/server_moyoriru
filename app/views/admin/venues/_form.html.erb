@@ -1,10 +1,44 @@
 <div class="admin-venues-form">
   <div class="form">
-    <%= form_with(model: @venue, local: true) do |f| %>
+    <%= form_with(model: @venue, url: admin_venues_path, local: true) do |f| %>
       <div class="field">
         <%= f.label :location_name %>
         <br>
         <%= f.text_field :location_name, class: 'form-control' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :station %>
+        <br>
+        <%= f.text_field :station, class: 'form-control' %>駅
+      </div>
+
+      <div class="field">
+        <%= f.label :on_foot %>
+        <br>
+        <%= f.text_field :on_foot, class: 'form-control' %>分
+      </div>
+
+      <div class="field">
+        <%= f.label :latitude %>
+        <br>
+        <%= f.text_field :latitude, class: 'form-control' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :longitude %>
+        <br>
+        <%= f.text_field :longitude, class: 'form-control' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :access_information_url %>
+        <br>
+        <%= f.text_field :access_information_url, class: 'form-control' %>
+      </div>
+
+      <div class="submit">
+        <%= f.submit '作成', class: 'btn btn-primary' %>
       </div>
     <% end %>
   </div>

@@ -12,6 +12,16 @@
   </head>
 
   <body>
+    <% if notice.present? %>
+      <div class="notifications">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% elsif alert.present? %>
+      <div class="notifications">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+
     <%= render "layouts/header" %>
     <%= yield %>
     <%= render "layouts/footer" %>
