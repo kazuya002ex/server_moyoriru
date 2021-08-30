@@ -1,0 +1,11 @@
+<div class="admin-venues-form">
+  <div class="form">
+    <%= form_with(model: @venue, local: true) do |f| %>
+      <div class="field">
+        <%= f.label :location_name %>
+        <br>
+        <%= f.text_field :location_name, class: 'form-control' %>
+      </div>
+    <% end %>
+  </div>
+</div>
