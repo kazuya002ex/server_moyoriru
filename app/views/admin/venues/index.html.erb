@@ -13,13 +13,13 @@
         <p class="venue-name">パシフィコ横浜</p>
         <p>みなとみらい駅 徒歩5分</p>
         <p class="link-p"><%= link_to "編集", edit_admin_venue_path(1) %></p>
-        <p class="link-p"><%= link_to "削除", "#" %></p>
+        <p class="link-p"><%= link_to "削除", "#", data: { confirm: '本当に削除してもよろしいですか？' }  %></p>
       </div>
       <div class="venue-content">
         <p class="venue-name">パシフィコ横浜</p>
         <p>みなとみらい駅 徒歩5分</p>
         <p class="link-p"><%= link_to "編集", edit_admin_venue_path(1) %></p>
-        <p class="link-p"><%= link_to "削除", "#" %></p>
+        <p class="link-p"><%= link_to "削除", "#", data: { confirm: '本当に削除してもよろしいですか？' }  %></p>
       </div>
     </div>
   </div>
