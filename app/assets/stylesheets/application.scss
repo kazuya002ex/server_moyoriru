@@ -353,6 +353,8 @@ footer a {
   color: #56b0d4;
 }
 
+/******** Admin画面 ********/
+
 // admin/venues#index
 
 .admin-venues-index-contents {
@@ -391,6 +393,8 @@ footer a {
 .venue-content .link-p a:hover {
   opacity: .7;
 }
+
+/********* レスポンシブ *********/
 
 @media screen and (max-width: 480px) {
   /* header */
