@@ -362,12 +362,31 @@ footer a {
 }
 
 .admin-venues-index-contents-title {
-  margin: 3% 0;
+  margin: 4.2% 0;
   font-weight: 500;
+  display: flex;
 }
 
 .admin-venues-index-contents-title h3 {
   font-size: 1.2rem;
+}
+
+.admin-venues-index-contents-title .create-action-button {
+  margin-left: 2.3%;
+}
+
+.admin-venues-index-contents-title .create-action-button a {
+  background-color: #63d3ff;
+  color: #fefefe;
+  padding: 9px 16px;
+  border-radius: 4px;
+  transition: .3s;
+  font-size: .93rem;
+}
+
+.admin-venues-index-contents-title .create-action-button a:hover {
+  transition: .3s;
+  opacity: .7;
 }
 
 .admin-venues-index-venue-contents {
