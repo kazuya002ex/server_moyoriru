@@ -12,18 +12,14 @@
     </div>
     <div class="admin-venues-index-venue-contents">
       <!-- TODO: eachで回す -->
-      <div class="venue-content">
-        <p class="venue-name">パシフィコ横浜</p>
-        <p>みなとみらい駅 徒歩5分</p>
-        <p class="link-p"><%= link_to "編集", edit_admin_venue_path(1) %></p>
-        <p class="link-p"><%= link_to "削除", "#", data: { confirm: '本当に削除してもよろしいですか？' }  %></p>
-      </div>
-      <div class="venue-content">
-        <p class="venue-name">パシフィコ横浜</p>
-        <p>みなとみらい駅 徒歩5分</p>
-        <p class="link-p"><%= link_to "編集", edit_admin_venue_path(1) %></p>
-        <p class="link-p"><%= link_to "削除", "#", data: { confirm: '本当に削除してもよろしいですか？' }  %></p>
-      </div>
+      <% @venues.each do |venue| %>
+        <div class="venue-content">
+          <p class="venue-name"><%= venue.location_name %></p>
+          <p><%= venue.station %>駅 徒歩<%= venue.on_foot %>分</p>
+          <p class="link-p"><%= link_to "編集", edit_admin_venue_path(venue.id) %></p>
+          <p class="link-p"><%= link_to "削除", admin_venue_path(venue.id), method: :delete, data: { confirm: '本当に削除してもよろしいですか？' }  %></p>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

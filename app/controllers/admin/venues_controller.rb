@@ -2,6 +2,7 @@ class Admin::VenuesController < ApplicationController
   before_action :set_venue, only: %i(edit update destroy)
 
   def index
+    @venues = Venue.active
   end
 
   def new

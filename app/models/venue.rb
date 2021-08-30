@@ -5,4 +5,7 @@ class Venue < ApplicationRecord
   validates :on_foot, presence: true
   validates :latitude, presence: true
   validates :longitude, presence: true
+
+
+  scope :active, -> () { where(deleted_at: nil) }
 end
