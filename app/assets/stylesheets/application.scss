@@ -373,6 +373,36 @@ footer a {
 
 /******** Admin画面 ********/
 
+// _form
+
+.admin-venues-form {
+  width: 100%;
+  margin: 0 2%;
+  padding-bottom: 4.5%;
+}
+
+.admin-venues-form .form {
+  margin-top: 5%;
+  padding-top: 1%;
+  background-color: #d8f4ff;
+  border: 2px solid #777;
+  border-radius: 6px;
+}
+
+.admin-venues-form .field {
+  margin-bottom: 1%;
+  padding: 1.5% 4%;
+  font-family: "Nico Moji", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.admin-venues-form .field input[type="text"] {
+  margin-top: .7%;
+}
+
+.admin-venues-form .submit {
+  padding: 2% 4%;
+}
+
 // admin/venues#index
 
 .admin-venues-index-contents {
