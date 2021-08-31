@@ -25,9 +25,19 @@ class Admin::VenuesController < ApplicationController
   end
 
   def update
+    if @venue.update(venue_params)
+      flash[:notice] = '更新しました'
+      redirect_to admin_venues_path
+    else
+      flash[:alert] = '失敗'
+      render :new
+    end
   end
 
   def destroy
+    @venue.delete!
+    redirect_to admin_venues_path
+    flash[:notice] = '削除しました'
   end
 
   private
