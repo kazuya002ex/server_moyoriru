@@ -391,12 +391,31 @@ footer a {
 
 .admin-venues-form .field {
   margin-bottom: 1%;
-  padding: 1.5% 4%;
+  padding: 1% 4%;
   font-family: "Nico Moji", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.01rem;
+}
+
+.admin-venues-form .field span {
+  padding-left: .5%;
+  font-size: 1.06rem;
 }
 
 .admin-venues-form .field input[type="text"] {
   margin-top: .7%;
+  width: 45%;
+  height: 30px;
+  padding-left: 1%;
+  font-size: 1.03rem;
+}
+
+.admin-venues-form .field input[type="text"].on_foot--field {
+  width: 6%;
+  text-align: right;
+}
+
+.admin-venues-form .field input[type="text"].geography--field {
+  width: 15%;
 }
 
 .admin-venues-form .submit {
