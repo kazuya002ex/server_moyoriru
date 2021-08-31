@@ -415,14 +415,35 @@ footer a {
 }
 
 .admin-venues-form .field input[type="text"].geography--field {
-  width: 15%;
+  width: 11%;
+}
+
+.admin-venues-form .field input[type="text"].url--field {
+  width: 75%;
 }
 
 .admin-venues-form .submit {
-  padding: 2% 4%;
+  padding: 1.6% 4%;
+}
+
+.admin-venues-form .submit input[type="submit"] {
+  padding: 12px 96px;
+  font-size: 16px;
+  background-color: rgb(255, 132, 110);
+  color: #fefefe;
+  border-radius: 7px;
+  border: 2px solid #bbb;
+}
+
+.admin-venues-form .submit input[type="submit"]:hover {
+  opacity: .7;
 }
 
 // admin/venues#index
+
+.back-button p a {
+  color: rgb(175, 175, 175);
+}
 
 .admin-venues-index-contents {
   margin: 0 3%;
