@@ -1,4 +1,5 @@
 class Admin::VenuesController < ApplicationController
+  before_action :authenticate_admin
   before_action :set_venue, only: %i(edit update destroy)
 
   def index
@@ -50,5 +51,16 @@ class Admin::VenuesController < ApplicationController
     params.require(:venue).permit(
       :location_name, :station, :on_foot, :latitude, :longitude, :access_information_url
     )
+  end
+
+  def authenticate_admin
+    current_user = 1
+    ## TODO: 本来の実装
+    # unless current_user.is_admin?
+    ## TODO: ダミー噛ませておく
+    unless current_user.present?
+      flash[:alert] = 'アクセス権限がありません'
+      redirect_to root_path
+    end
   end
 end
