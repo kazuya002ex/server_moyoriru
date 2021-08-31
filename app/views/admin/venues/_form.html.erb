@@ -1,6 +1,6 @@
 <div class="admin-venues-form">
   <div class="form">
-    <%= form_with(model: @venue, url: admin_venues_path, local: true) do |f| %>
+    <%= form_with(model: @venue, url: url, local: true, method: method_name)  do |f| %>
       <div class="field">
         <%= f.label :location_name %>
         <br>

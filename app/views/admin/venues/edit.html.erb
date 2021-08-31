@@ -10,5 +10,5 @@
     </p>
   </div>
 
-  <%= render 'form' %>
+  <%= render 'form', { url: admin_venue_path(@venue.id), method_name: 'PUT' } %>
 </div>
