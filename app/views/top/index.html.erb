@@ -14,67 +14,22 @@
     <div class="top-index-venues-title title">
       <h2>よく検索されている会場</h2>
     </div>
-    <!-- TODO: eachで回す -->
-    <div class="top-index-venue">
-      <a href="/venues/1">
-        <div class="venue-icon">
-          <i class="fas fa-subway"></i>
-        </div>
-        <div class="venue-descriptions">
-          <h3>パシフィコ横浜</h3>
-          <p class="station-name">みなとみらい駅 <span class="on_foot">徒歩5分</span></p>
-        </div>
+    <% @venues.each do |venue| %>
+      <div class="top-index-venue">
+        <%= link_to venue_path(venue.id) do %>
+          <div class="venue-icon">
+            <i class="fas fa-subway"></i>
+          </div>
+          <div class="venue-descriptions">
+            <h3><%= venue.location_name %></h3>
+            <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
+          </div>
 
-        <div class="action-button">
-          会場の詳細 >
-        </div>
-      </a>
-    </div>
-    <div class="top-index-venue">
-      <a href="/venues/1">
-        <div class="venue-icon">
-          <i class="fas fa-subway"></i>
-        </div>
-        <div class="venue-descriptions">
-          <h3>さいたまスーパーアリーナ</h3>
-          <p class="station-name">さいたま新都心駅 <span class="on_foot">徒歩5分</span></p>
-        </div>
-
-        <div class="action-button">
-          会場の詳細 >
-        </div>
-      </a>
-    </div>
-    <div class="top-index-venue">
-      <a href="/venues/1">
-        <div class="venue-icon">
-          <i class="fas fa-subway"></i>
-        </div>
-        <div class="venue-descriptions">
-          <h3>横浜アリーナ</h3>
-          <p class="station-name">新横浜駅 <span class="on_foot">徒歩12分</span></p>
-        </div>
-
-        <div class="action-button">
-          会場の詳細 >
-        </div>
-      </a>
-    </div>
-    <div class="top-index-venue">
-      <a href="/venues/1">
-        <div class="venue-icon">
-          <i class="fas fa-subway"></i>
-        </div>
-        <div class="venue-descriptions">
-          <h3>横浜アリーナ</h3>
-          <p class="station-name">新横浜駅 <span class="on_foot">徒歩12分</span></p>
-        </div>
-
-        <div class="action-button">
-          会場の詳細 >
-        </div>
-      </a>
-    </div>
-    <!-- TODO: ここまで回す -->
+          <div class="action-button">
+            会場の詳細 >
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </section>
