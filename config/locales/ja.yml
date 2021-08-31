@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      venue: 会場
+    attributes:
+      venue:
+        location_name: 会場名
+        station: 駅名
+        on_foot: 徒歩
+        latitude: 緯度
+        longitude: 経度
+        access_information_url: 公式アクセス

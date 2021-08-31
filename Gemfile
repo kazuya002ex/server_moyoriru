@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'ridgepole'
+gem 'rails-i18n'
 
 # gem 'image_processing', '~> 1.2'
 
