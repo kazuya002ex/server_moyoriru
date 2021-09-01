@@ -19,3 +19,4 @@ production:
   database: moyoriru_production
   username: moyoriru
   password: <%= ENV['MOYORIRU_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
