@@ -18,7 +18,7 @@
     <div class="venues-show-access-url">
       <h3>公式サイト</h3>
       <br>
-      <p><%= link_to "#{ @venue.access_information_url }", @venue.access_information_url, target: '_blank' %></p>
+      <p><%= link_to "#{ @venue.access_information_url.truncate(50) }", @venue.access_information_url, target: '_blank' %></p>
     </div>
   </div>
 </section>
