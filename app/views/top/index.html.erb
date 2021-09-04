@@ -16,22 +16,24 @@
     <div class="top-index-venues-title title">
       <h2>よく検索されている会場</h2>
     </div>
-    <% @venues.each do |venue| %>
-      <div class="top-index-venue">
-        <%= link_to venue_path(venue.id) do %>
-          <div class="venue-icon">
-            <i class="fas fa-subway"></i>
-          </div>
-          <div class="venue-descriptions">
-            <h3><%= venue.location_name %></h3>
-            <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
-          </div>
+    <div class="top-index-venues-index">
+      <% @venues.each do |venue| %>
+        <div class="top-index-venue">
+          <%= link_to venue_path(venue.id) do %>
+            <div class="venue-icon">
+              <i class="fas fa-subway"></i>
+            </div>
+            <div class="venue-descriptions">
+              <h3><%= venue.location_name %></h3>
+              <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
+            </div>
 
-          <div class="action-button">
-            会場の詳細 >
-          </div>
-        <% end %>
-      </div>
-    <% end %>
+            <div class="action-button">
+              会場の詳細 >
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </section>
