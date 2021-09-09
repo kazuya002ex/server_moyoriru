@@ -7,6 +7,12 @@ class VenuesController < ApplicationController
   def show
   end
 
+  def search
+    @venues = Venue.search(params[:keyword])
+    @keyword = params[:keyword]
+    render 
+  end
+
   private
 
   def set_venue
