@@ -1,35 +1,69 @@
+<%= provide(:title, "もよりる - 会場の最寄り駅がわかるサイト") %>
+
 <section class="top-index-wrapper wrapper">
   <div class="top-index-text">
     <h2>「もよりる」は、イベント会場の最寄り駅を検索できるサイトです。</h2>
   </div>
 
   <div class="top-index-search-form">
-    <form>
-      <input type="search" placeholder="会場名で検索">
-      <input type="submit" value="検索">
-    </form>
+    <%= form_with url: search_path, method: :get, local: true do |f| %>
+      <%= f.search_field :keyword, value: @keyword, placeholder: "会場名で検索" %>
+      <%= f.submit "検索" %>
+    <% end %>
   </div>
 
-  <div class="top-index-venues">
-    <div class="top-index-venues-title title">
-      <h2>よく検索されている会場</h2>
-    </div>
-    <% @venues.each do |venue| %>
-      <div class="top-index-venue">
-        <%= link_to venue_path(venue.id) do %>
-          <div class="venue-icon">
-            <i class="fas fa-subway"></i>
-          </div>
-          <div class="venue-descriptions">
-            <h3><%= venue.location_name %></h3>
-            <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
-          </div>
+  <% if @keyword.present? %>
+    <div class="top-index-venues">
+      <div class="top-index-venues-title title">
+        <h2>「<%= @keyword %>」での検索結果</h2>
+      </div>
 
-          <div class="action-button">
-            会場の詳細 >
+      <div class="top-index-venues-index">
+        <% @search_venues.each do |venue| %>
+          <div class="top-index-venue">
+            <%= link_to venue_path(venue.id) do %>
+              <div class="venue-icon">
+                <i class="fas fa-subway"></i>
+              </div>
+              <div class="venue-descriptions">
+                <h3><%= venue.location_name %></h3>
+                <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
+              </div>
+
+              <div class="action-button">
+                会場の詳細 >
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+
+  <% if @venues.present? %>
+    <div class="top-index-venues">
+      <div class="top-index-venues-title title">
+        <h2>よく検索されている会場</h2>
+      </div>
+      <div class="top-index-venues-index">
+        <% @venues.each do |venue| %>
+          <div class="top-index-venue">
+            <%= link_to venue_path(venue.id) do %>
+              <div class="venue-icon">
+                <i class="fas fa-subway"></i>
+              </div>
+              <div class="venue-descriptions">
+                <h3><%= venue.location_name %></h3>
+                <p class="station-name"><%= venue.station %>駅 <span class="on_foot">徒歩<%= venue.on_foot %>分</span></p>
+              </div>
+
+              <div class="action-button">
+                会場の詳細 >
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
 </section>
