@@ -19,7 +19,7 @@
   docker-compose up -d
 
   # DBを作成する
-  docker-compose run web rails db:create db:migrate
+  docker-compose run web rails db:create
 ```
 
 - DBに変更があった場合
