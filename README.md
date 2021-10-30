@@ -25,8 +25,8 @@
 - DBに変更があった場合
 
 ```
-  # 現在のDBを削除し、DBを再構築する
-  docker-compose run web rails db:migrate:reset
+  # DBのスキーマを変更したとき
+  docker-compose run web ridgepole -c config/database.yml -E development --apply -f Schemafile
 
   # 開発データを投入する
   docker-compose run web rails db:seed
