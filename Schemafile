@@ -12,6 +12,7 @@ create_table "venues", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=
   t.string "on_foot", null: false
   t.float "latitude", null: false
   t.float "longitude", null: false
+  t.text "address", null: false
   t.text "access_information_url"
   t.references "user", unsigned: true, null: false
   t.datetime "deleted_at"
