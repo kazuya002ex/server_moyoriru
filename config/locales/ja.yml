@@ -9,4 +9,5 @@ ja:
         on_foot: 徒歩
         latitude: 緯度
         longitude: 経度
+        address: 住所
         access_information_url: 公式アクセス
