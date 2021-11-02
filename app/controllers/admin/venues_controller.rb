@@ -49,7 +49,7 @@ class Admin::VenuesController < ApplicationController
 
   def venue_params
     params.require(:venue).permit(
-      :location_name, :station, :on_foot, :latitude, :longitude, :access_information_url
+      :location_name, :station, :on_foot, :latitude, :longitude, :address, :access_information_url
     )
   end
 
